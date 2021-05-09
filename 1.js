@@ -36,3 +36,4 @@ $(function() {
 });
 
 document.querySelector(".medo-show").onclick=function(){this.classList.toggle("m");document.querySelector(".menu").classList.toggle("open")};
+function loadCSS(e, t, n) { "use strict";var i = window.document.createElement("link");var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e;i.media = "only x";o.parentNode.insertBefore(i,o);setTimeout(function (){i.media = n || "all" }) }loadCSS("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");loadCSS("https://fonts.googleapis.com/css?family=Tajawal:200,300,400,500,600,700,800,900");
