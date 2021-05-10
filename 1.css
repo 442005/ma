@@ -1,5 +1,65 @@
 
-
+ /* Variable definitions
+-----------------------
+<Variable name="keycolor" description="اللون الرئيسي" type="color" default="#08f" value="#0008ff"/>
+<Variable name="body.background" description="خلفية الموقع" type="background" color="#ffffff" default="#2c3340 url() no-repeat fixed top left" value="#2c3340 url() no-repeat fixed top left"/>
+<Group description="الإعدادات الرئيسية" selector="body">
+<Variable name="maincolor" description="اللون الرئيسي للقالب" type="color"  default="#2c3340"  value="#2c3340"/>
+<Variable name="light.border.color" description="لون الحدود" type="color"  default="$(maincolor)"  value="#9E9E9E"/>
+<Variable name="body.font" description="الخط" type="font" default="Tajawal" value="Tajawal"/>
+</Group>
+<Group description="الهيدر" selector=".header-wrapper">
+<Variable name="font.color" description="لون الخط" type="color"  default="#fff"  value="#ffffff"/>
+<Variable name="font.color.hover" description="لون تأثير مرور الماوس" type="color"  default="#fff"  value="#ffffff"/>
+<Variable name="svg.color" description="لون ايقونات البحث والرئيسية" type="color"  default="#fff"  value="#ffffff"/>
+</Group>
+<Group description="اخر المشاركات" selector=".post-outer" >
+<Variable name="post.title.Color" description="لون العناوين" type="color" default="#000" value="#000000"/>
+<Variable name="post.short.text.Color" description="لون وصف الموضوع القصير" type="color" default="#616161" value="#616161"/>
+<Variable name="post.article.meta" description="لون روابط الكاتب والتاريخ والتعليقات" type="color" default="#616161" value="#616161"/>
+<Variable name="post.meta.border" description="لون بوردر الكاتب والتاريخ والتعليقات" type="color" default="$(light.border.color)" value="#0b5389"/>
+<Variable name="post.hover" description="لون تأثير مرور الماوس" type="color" default="$(maincolor)" value="#0b5389"/>
+</Group>
+<Group description="التسميات" selector=".list-label-widget-content">
+<Variable name="label.bg" description="اللون الاول" type="color"  default="$(maincolor)"  value="#0b5389"/>
+<Variable name="label.text.color" description="لون خط التسميات" type="color"  default="#0b5389"  value="#0b1489"/>
+</Group>
+<Group description="داخل الموضوع" selector=".item .post-outer" >
+<Variable name="posts.title.color" description="لون عنوان الموضوع" type="color" default="#000"  value="#000000"/>
+<Variable name="posts.title.border" description="لون بوردر عنوان الموضوع" type="color" default="$(light.border.color)"  value="#0b5389"/>
+<Variable name="posts.text.color" description="لون نص الموضوع" type="color" default="#000"  value="#ffffff"/>
+<Variable name="posts.link.color" description="لون روابط الموضوع" type="color" default="#0b5389"  value="#0b1489"/>
+<Variable name="posts.meta.color" description="لون معلومات الموضوع اسفل العنوان" type="color" default="#777"  value="#777777"/>
+<Variable name="posts.meta.icon" description="لون ايقونات معلومات الموضوع" type="color" default="#777"  value="#777777"/>
+<Variable name="posts.meta.border" description="لون البوردر لمعلومات الموضوع" type="color" default="$(light.border.color)"  value="#0b5389"/>
+<Variable name="posts.tags.color" description="لون التسمية" type="color" default="#292929"  value="#292929"/>
+<Variable name="posts.tags.icon" description="لون ايقونة التسمية" type="color" default="#292929"  value="#292929"/>
+<Variable name="posts.tags.border" description="لون بوردر التسمية" type="color" default="$(light.border.color)"  value="#0b5389"/>
+<Variable name="posts.tags.hover" description="لون التسمية عند تمرير المؤشر" type="color" default="#3560ab"  value="#4535ab"/>
+<Variable name="posts.img.border" description="لون بوردر الصورة" type="color" default="$(light.border.color)"  value="#0b5389"/>
+<Variable name="posts.num.bg" description="خلفية التعداد الرقمي" type="color" default="#eee"  value="#eeeeee"/>
+<Variable name="posts.num.color" description="لون رقم التعداد الرقمي" type="color" default="#000"  value="#000000"/>
+<Variable name="posts.num.border" description="لون بوردر التعداد الرقمي" type="color" default="$(light.border.color)"  value="#0b5389"/>
+<Variable name="posts.h.bg" description="لون خلفية العنواوين" type="color" default="#eee"  value="#eeeeee"/>
+<Variable name="posts.h.color" description="لون خط العناوين" type="color" default="#000"  value="#000000"/>
+</Group>
+<Group description="التذييل" selector=".footer-wrapper">
+<Variable name="credit.footer.text.color" description="لون خط حقوق النشر" type="color"  default="#fff"  value="#ffffff"/>
+<Variable name="credit.link.color" description="لون خط اسم الموقع بحقوق النشر" type="color"  default="#fff"  value="#ffffff"/>
+<Variable name="credit.hover.color" description="لون تأثير مرور الماوس" type="color"  default="$(maincolor)"  value="#d07c0f"/>
+</Group>
+<Group description='نموذج التعليقات' selector="#comments">
+<Variable name="body.text.color" description="لون النص" type="color" default="#777777" hideEditor="true" value="#777777"/>
+<Variable name="body.link.color" description="لون الروابط" type="color" default="$(maincolor)" hideEditor="true" value="#0b5389"/>
+<Variable name="posts.icons.color" description="خلفية ايقونة الاعلام" type="color" default="$(maincolor)" hideEditor="true" value="#0b5389"/>
+<Variable name="labels.background.color" description="خلفيات الازرار" type="color" default="$(maincolor)" hideEditor="true" value="#0b5389"/>
+<Variable name="BordersCommints" description="لون الفواصل" type="color" default="$(maincolor)" hideEditor="true" value="#0b5389"/>
+<Variable name="posts.background.color" description="لون الخلفية" type="color" default="transparent" hideEditor="true" value="rgba(0,0,0,0)"/>
+<Variable name="body.text.font" description="text font" type="font" default="600 14px &#39;Droid Arabic Kufi&#39;" hideEditor="true" value="600 14px &#39;Droid Arabic Kufi&#39;"/>
+<Variable name="tabs.font" description="tabs font" type="font" default="14px &#39;Droid Arabic Kufi&#39;" hideEditor="true" value="14px &#39;Droid Arabic Kufi&#39;"/>
+</Group> 
+-----------------------
+ */
 /*   الستايل الافتراضي
 ===================================================*/
 
